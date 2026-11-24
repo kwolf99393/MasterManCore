@@ -1,0 +1,66 @@
+# MasterManCore Ranks Configuration
+default-rank: default
+
+ranks:
+  default:
+    display: "Default"
+    prefix: "&7"
+    weight: 0
+    permissions:
+      - mastermancore.home
+      - mastermancore.warp
+      - mastermancore.tpa
+      - mastermancore.ah.sell
+    inheritance: []
+
+  vip:
+    display: "VIP"
+    prefix: "&a[VIP] &f"
+    weight: 10
+    permissions:
+      - mastermancore.kit.vip
+    inheritance:
+      - default
+
+  mvp:
+    display: "MVP"
+    prefix: "&b[MVP] &f"
+    weight: 20
+    permissions:
+      - mastermancore.kit.mvp
+      - mastermancore.fly
+    inheritance:
+      - vip
+
+  moderator:
+    display: "Moderator"
+    prefix: "&2[Mod] &f"
+    weight: 50
+    permissions:
+      - mastermancore.mod
+      - mastermancore.ban
+      - mastermancore.mute
+      - mastermancore.heal
+      - mastermancore.feed
+      - mastermancore.invsee
+    inheritance:
+      - mvp
+
+  admin:
+    display: "Admin"
+    prefix: "&c[Admin] &f"
+    weight: 80
+    permissions:
+      - mastermancore.admin
+      - mastermancore.*
+    inheritance:
+      - moderator
+
+  owner:
+    display: "Owner"
+    prefix: "&4&l[Owner] &f"
+    weight: 100
+    permissions:
+      - "*"
+    inheritance:
+      - admin
