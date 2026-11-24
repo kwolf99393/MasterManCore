@@ -1,0 +1,73 @@
+crates:
+  vote:
+    display-name: "&aVote Crate"
+    material: CHEST
+    rewards:
+      '1':
+        material: DIAMOND
+        amount: 5
+        chance: 30
+      '2':
+        material: EMERALD
+        amount: 10
+        chance: 25
+      '3':
+        material: GOLDEN_APPLE
+        amount: 3
+        chance: 20
+      '4':
+        material: IRON_INGOT
+        amount: 32
+        chance: 15
+      '5':
+        material: DIAMOND_SWORD
+        amount: 1
+        chance: 10
+  rare:
+    display-name: "&dRare Crate"
+    material: ENDER_CHEST
+    rewards:
+      '1':
+        material: DIAMOND_BLOCK
+        amount: 3
+        chance: 20
+      '2':
+        material: ENCHANTED_GOLDEN_APPLE
+        amount: 1
+        chance: 15
+      '3':
+        material: NETHER_STAR
+        amount: 1
+        chance: 5
+      '4':
+        material: DIAMOND
+        amount: 16
+        chance: 30
+      '5':
+        material: EMERALD_BLOCK
+        amount: 5
+        chance: 30
+  legendary:
+    display-name: "&6Legendary Crate"
+    material: BEACON
+    rewards:
+      '1':
+        material: DIAMOND_BLOCK
+        amount: 10
+        chance: 25
+      '2':
+        material: NETHER_STAR
+        amount: 2
+        chance: 10
+      '3':
+        material: ENCHANTED_GOLDEN_APPLE
+        amount: 5
+        chance: 20
+      '4':
+        material: ELYTRA
+        amount: 1
+        chance: 5
+      '5':
+        material: DIAMOND
+        amount: 64
+        chance: 40
