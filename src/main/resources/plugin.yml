@@ -1,0 +1,169 @@
+name: MasterManCore
+version: 1.0.0
+main: com.mastermanmc.core.MasterManCore
+author: MasterManMC Team
+description: Complete all-in-one core plugin for MasterManMC server (1.12.2)
+website: https://github.com/kwolf99393/MasterManCore
+api-version: 1.12
+softdepend: []
+
+commands:
+  balance:
+    description: Check your balance
+    aliases: [bal, money]
+    usage: /balance [player]
+  pay:
+    description: Pay another player
+    usage: /pay <player> <amount>
+  eco:
+    description: Economy admin commands
+    usage: /eco <give|take|set|reset> <player> <amount>
+    permission: mastermancore.eco.admin
+  ah:
+    description: Open the Auction House
+    aliases: [auction, auctionhouse]
+    usage: /ah [sell <price>]
+  crate:
+    description: Crate commands
+    usage: /crate <give|list|key> ...
+    permission: mastermancore.crate.admin
+  key:
+    description: Give crate keys
+    usage: /key <player> <crate> [amount]
+    permission: mastermancore.crate.admin
+  ce:
+    description: Custom enchant commands
+    aliases: [customenchant, enchant]
+    usage: /ce <list|apply|remove>
+  giveweapon:
+    description: Give custom weapons
+    usage: /giveweapon <player> <weapon>
+    permission: mastermancore.weapon.admin
+  setspawn:
+    description: Set server spawn
+    permission: mastermancore.admin
+  spawn:
+    description: Teleport to spawn
+  home:
+    description: Teleport to your home
+    usage: /home [name]
+  sethome:
+    description: Set a home
+    usage: /sethome [name]
+  delhome:
+    description: Delete a home
+    usage: /delhome <name>
+  homes:
+    description: List your homes
+  warp:
+    description: Teleport to a warp
+    usage: /warp <name>
+  setwarp:
+    description: Set a warp
+    usage: /setwarp <name>
+    permission: mastermancore.admin
+  delwarp:
+    description: Delete a warp
+    usage: /delwarp <name>
+    permission: mastermancore.admin
+  warps:
+    description: List warps
+  tpa:
+    description: Request teleport to a player
+    usage: /tpa <player>
+  tpaccept:
+    description: Accept a teleport request
+    aliases: [tpyes]
+  tpdeny:
+    description: Deny a teleport request
+    aliases: [tpno]
+  msg:
+    description: Private message
+    aliases: [m, tell, whisper]
+    usage: /msg <player> <message>
+  reply:
+    description: Reply to last message
+    aliases: [r]
+    usage: /reply <message>
+  heal:
+    description: Heal yourself or others
+    usage: /heal [player]
+    permission: mastermancore.heal
+  feed:
+    description: Feed yourself or others
+    usage: /feed [player]
+    permission: mastermancore.feed
+  fly:
+    description: Toggle flight
+    usage: /fly [player]
+    permission: mastermancore.fly
+  gamemode:
+    description: Change gamemode
+    aliases: [gm]
+    usage: /gamemode <0|1|2|3> [player]
+    permission: mastermancore.gamemode
+  invsee:
+    description: View a player's inventory
+    usage: /invsee <player>
+    permission: mastermancore.invsee
+  clear:
+    description: Clear inventory
+    usage: /clear [player]
+    permission: mastermancore.clear
+  kit:
+    description: Claim a kit
+    usage: /kit <name>
+  kits:
+    description: List available kits
+  masterman:
+    description: MasterManCore info and reload
+    aliases: [mm, mmc]
+    usage: /masterman [reload]
+
+permissions:
+  mastermancore.*:
+    description: All MasterManCore permissions
+    children:
+      mastermancore.admin: true
+      mastermancore.eco.admin: true
+      mastermancore.crate.admin: true
+      mastermancore.weapon.admin: true
+      mastermancore.heal: true
+      mastermancore.feed: true
+      mastermancore.fly: true
+      mastermancore.gamemode: true
+      mastermancore.invsee: true
+      mastermancore.clear: true
+  mastermancore.admin:
+    description: Admin commands
+    default: op
+  mastermancore.eco.admin:
+    description: Economy admin
+    default: op
+  mastermancore.crate.admin:
+    description: Crate admin
+    default: op
+  mastermancore.weapon.admin:
+    description: Custom weapon admin
+    default: op
+  mastermancore.heal:
+    default: op
+  mastermancore.feed:
+    default: op
+  mastermancore.fly:
+    default: op
+  mastermancore.gamemode:
+    default: op
+  mastermancore.invsee:
+    default: op
+  mastermancore.clear:
+    default: op
+  mastermancore.ah.sell:
+    description: Sell items in AH
+    default: true
+  mastermancore.home:
+    default: true
+  mastermancore.warp:
+    default: true
+  mastermancore.tpa:
+    default: true
