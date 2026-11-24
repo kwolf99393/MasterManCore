@@ -1,0 +1,57 @@
+# MasterManCore Configuration
+# Complete core plugin for MasterManMC
+
+prefix: "&8[&6MasterMan&eMC&8] &r"
+
+economy:
+  starting-balance: 1000.0
+  currency-name: "Coins"
+  currency-symbol: "$"
+  min-pay: 1.0
+
+auction-house:
+  enabled: true
+  tax-percent: 5.0
+  max-listings-per-player: 10
+  expire-hours: 48
+  min-price: 10.0
+  max-price: 10000000.0
+
+crates:
+  enabled: true
+  animation: true
+
+custom-enchants:
+  enabled: true
+
+homes:
+  max-homes: 3
+  max-homes-vip: 5
+  max-homes-mvp: 10
+
+warps:
+  enabled: true
+
+tpa:
+  timeout-seconds: 60
+
+messages:
+  no-permission: "&cYou don't have permission to do that!"
+  player-only: "&cThis command can only be used by players!"
+  player-not-found: "&cPlayer not found!"
+  insufficient-funds: "&cYou don't have enough money!"
+  balance: "&aYour balance: &e{symbol}{balance}"
+  balance-other: "&a{player}'s balance: &e{symbol}{balance}"
+  paid: "&aYou paid &e{symbol}{amount} &ato &e{player}"
+  received: "&aYou received &e{symbol}{amount} &afrom &e{player}"
+  ah-sold: "&aYour item was sold for &e{symbol}{amount}!"
+  ah-bought: "&aYou bought an item for &e{symbol}{amount}!"
+  teleported: "&aTeleported!"
+  home-set: "&aHome &e{name} &aset!"
+  home-deleted: "&aHome &e{name} &adeleted!"
+  warp-set: "&aWarp &e{name} &aset!"
+  tpa-sent: "&aTeleport request sent to &e{player}"
+  tpa-received: "&e{player} &ahas requested to teleport to you. &a/tpaccept &7or &c/tpdeny"
+  tpa-accepted: "&aTeleport request accepted!"
+  tpa-denied: "&cTeleport request denied."
+  tpa-expired: "&cTeleport request expired."
